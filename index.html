@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Game of Checkers</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+        <p class='nav' id='redscore'> 0</p>
+        <a class='nav' href="" id="forfeit">Forfeit</a>
+        <a class='nav' href="" id="restart">Restart the game</a>
+        <p class='nav' id='blackscore'> 0</p>
+  </nav>
+  <div id='actionList'><p>ACTION LOG</p>
+    <ul>
+  </ul></div>
+  <div class="container">
+    <div class="row">
+      <span class="col blank">&nbsp;</span>
+      <span class="col blank">1</span>
+      <span class="col blank">2</span>
+      <span class="col blank">3</span>
+      <span class="col blank">4</span>
+      <span class="col blank">5</span>
+      <span class="col blank">6</span>
+      <span class="col blank">7</span>
+      <span class="col blank">8</span>
+    </div>
+    <div class="row">
+      <span class="col blank">A</span>
+      <span class="col red" id="A1"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="A3"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="A5"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="A7"><img src="red.png"></span>
+      <span class="col invalid"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">B</span>
+      <span class="col invalid"></span>
+      <span class="col red" id="B2"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="B4"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="B6"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="B8"><img src="red.png"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">C</span>
+      <span class="col red" id="C1"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="C3"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="C5"><img src="red.png"></span>
+      <span class="col invalid"></span>
+      <span class="col red" id="C7"><img src="red.png"></span>
+      <span class="col invalid"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">D</span>
+      <span class="col invalid"></span>
+      <span class="col" id="D2"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="D4"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="D6"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="D8"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">E</span>
+      <span class="col" id="E1"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="E3"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="E5"></span>
+      <span class="col invalid"></span>
+      <span class="col" id="E7"></span>
+      <span class="col invalid"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">F</span>
+      <span class="col invalid"></span>
+      <span class="col black" id="F2"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="F4"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="F6"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="F8"><img src="black.png"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">G</span>
+      <span class="col black" id="G1"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="G3"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="G5"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="G7"><img src="black.png"></span>
+      <span class="col invalid"></span>
+    </div>
+    <div class="row">
+      <span class="col blank">H</span>
+      <span class="col invalid"></span>
+      <span class="col black" id="H2"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="H4"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="H6"><img src="black.png"></span>
+      <span class="col invalid"></span>
+      <span class="col black" id="H8"><img src="black.png"></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
